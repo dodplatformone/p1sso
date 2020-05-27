@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Platform One SSO</title>
+    <link rel="icon" type="image/png" sizes="502x498" href="img/babyyodaCrop.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body id="page-top">
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container"><a class="navbar-brand js-scroll-trigger" href="#page-top"
+                style="color: #52a1fd;">PLATFORM ONE SSO</a><button data-toggle="collapse"
+                data-target="#navbarResponsive" class="navbar-toggler float-right" aria-controls="navbarResponsive"
+                aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive"
+                style="margin: 0 auto;margin-left: 0px;padding: auto;margin-top: 0px;margin-right: 0px;margin-bottom: 0px;width: auto;min-width: 0px;max-width: none;height: auto;min-height: 0px;padding-left: 10px;">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger"
+                            href="#whatisp1sso">What is P1 SSO?</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger"
+                            href="#whatdoineedtodo">What do I need to do?</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger"
+                            href="#howdoisetupp1sso">How do I setup it up?</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#faq">FAQ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="masthead" style="background: url('img/tech-bg.jpg');height: 100%;max-height: auto;">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-lg-7 my-auto">
+                    <div class="mx-auto header-content">
+                        <h1 class="text-center mb-5" style="color: #F8F8F8;">The transition to Platform One Single
+                            Sign-On (P1 SSO)
+                            has begun. Scroll down for more information and setup
+                            instructions.</h1>
+                    </div>
+                </div>
+                <div class="col-lg-5 my-auto">
+                    <div class="imac-mockup">
+                        <img class="device" src="img/imac.svg">
+                        <div class="screen" style="background-image: url('img/desktopMockup.png');">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="whatisp1sso" class="whatisp1sso text-left"
+        style="background-color: #040e16;height: none;min-height: auto;max-height: auto;max-width: auto;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <h2 class="section-heading" style="color: #52a1fd;">What is Platform One SSO?</h2>
+                    <p>Platform One Single Sign-On (P1 SSO) allows us to
+                        provide access to different apps using the same login based on an
+                        open source identity service called Keycloak. In other words, you will
+                        have one login to access
+                        apps such as Mattermost, Jitsi, GitLab, etc. It also gives us the capability to
+                        have multiple login
+                        methods on the same account, meaning you'll be able to use a username, password and MFA to log
+                        in at home while using a CAC to log in at work. These changes will be rolling out in two phases:
+                    </p>
+                    <p><b>Phase 1:</b> Migrate Mattermost username/password
+                        users to P1 SSO. This has already begun and will be complete on 31 May.</li>
+                    <p><b>Phase 2:</b> Migrate Mattermost AF Portal Login users
+                        to P1 SSO and enable the CAC login option. This will follow shortly after Phase 1.
+                </div>
+            </div>
+        </div>
+
+        <section id="whatdoineedtodo" class="whatdoineedtodo text-left"
+            style="background-color: #040e16;height: none;min-height: auto;max-height: auto;max-width: auto;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 mx-auto">
+                        <h2 class="section-heading" style="color: #52a1fd;">What do I need to do?</h2>
+                        <p><b>AF Portal Login Users:</b> If you currently log into Mattermost
+                            using
+                            the AF Portal Login button, there's nothing you need to do right now.
+                            Continue logging into Mattermost using the AF Portal Login button.</p>
+
+                        <p><b>Username/Password/MFA Users:</b> If you log into Mattermost using
+                            a
+                            username, password and MFA, you can set up your P1 SSO
+                            account now using the instructions below. If you don’t set up your P1 SSO account before 31
+                            May, you will simply be required to set up your P1 SSO
+                            account in order to access Mattermost. This process does require access to your work email
+                            which is why we recommend you setup your P1 SSO account when it's convenient for you.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <section id="howdoisetupp1sso" class="howdoisetupp1sso text-left"
+                style="background-color: #040e16;height: none;min-height: auto;max-height: auto;max-width: auto;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 mx-auto">
+                            <h2 class="section-heading" style="color: #52a1fd;">How do I set it up?</h2>
+                            <p style="color: #ff3800;">Important: Access to your mobile device
+                                MFA app (e.g. Google Authenticator, Authy, etc.) and the email
+                                address associated with your Mattermost account is required. It's also recommended to
+                                perform these steps from a web browser on a computer.</p>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row border-bottom: 3px solid #ffffff;">
+                        <div class="col-md-8 mx-auto">
+                            <h3 class="section-heading" style="color: #52a1fd;">Step 1</h2>
+                                <p>Go to
+                                    <a href="https://sso.collab.cdl.af.mil/"
+                                        target="_blank">https://sso.collab.cdl.af.mil/</a> and
+                                    select “Forgot Password?”. Enter the
+                                    email address associated with your
+                                    Mattermost account and click “Submit”.<br></p>
+                                <div class="badges" style="height: auto; border-bottom:"><img class="img-fluid"
+                                        src="img/sso_main.png" width="auto"
+                                        style="height: auto;width: 400px; border-radius: 25px;"></div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row border-bottom: 3px solid #ffffff;">
+                        <div class="col-md-8 mx-auto">
+                            <h3 class="section-heading" style="color: #52a1fd;">Step 2</h2>
+                                <p>You will receive an email with
+                                    a link to reset your credentials. Click “Link to reset credentials”
+                                    or copy the URL into a web browser.<br>
+                                <div class="badges" style="height: auto; border-bottom:">
+                                    <div class="badges" style="height: auto; border-bottom:"><img class="img-fluid"
+                                            src="img/verify_email.png" width="auto"
+                                            style="height: auto;width: auto; border-radius: 25px;"></div>
+                                </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row border-bottom: 3px solid #ffffff;">
+                        <div class="col-md-8 mx-auto">
+                            <h3 class="section-heading" style="color: #52a1fd;">Step 3</h2>
+                                <p>Setup MFA by scanning the QR code with your MFA app. This will create a new MFA
+                                    6-digit pin which you'll use for P1 SSO.
+                                    Enter the new 6-digit pin and type in a device name (can be anything). You will
+                                    still need your previous MFA 6-digit
+                                    pin to log into Mattermost prior to
+                                    31 May.</p>
+                                <p style="font-style: italic;">Note: If your MFA
+                                    pin is not accepted or entered incorrectly, the QR code is
+                                    reset so you will need to scan it again.</p>
+                                <div class="badges" style="height: auto; border-bottom:"><img class="img-fluid"
+                                        src="img/setup_mfa.png" width="auto"
+                                        style="height: auto;width: 400px; border-radius: 25px;"></div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row border-bottom: 3px solid #ffffff;">
+                        <div class="col-md-8 mx-auto">
+                            <h3 class="section-heading" style="color: #52a1fd;">Step 4</h2>
+                                <p>Enter a new password.
+                                    You can use the same password as your Mattermost account but it must
+                                    contain at least two
+                                    special characters.<br></p>
+                                <div class="badges" style="height: auto; border-bottom:"><img class="img-fluid"
+                                        src="img/setup_password.png" width="auto"
+                                        style="height: auto;width: 400px;border-radius: 25px;"></div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row border-bottom: 3px solid #ffffff;">
+                        <div class="col-md-8 mx-auto">
+                            <h3 class="section-heading" style="color: #52a1fd;">Optional</h2>
+                                <p>Feel free to update the
+                                    rest of your profile but <span style="color: #ff3800;">do not
+                                        change your email address or username.</p>
+                                <div class="badges" style="height: auto; border-bottom:"><img class="img-fluid"
+                                        src="img/setup_profile.png" width="auto"
+                                        style="height: auto;width: 700px;border-radius: 25px;"></div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row border-bottom: 3px solid #ffffff;">
+                        <div class="col-md-8 mx-auto">
+                            <h3 class="section-heading" style="color: #52a1fd;">That's it for now!</h2>
+                                <p>Continue using Mattermost as you have
+                                    been but on 31 May, we will transition to P1 SSO which will
+                                    require you to log into Mattermost by selecting “Platform One SSO” from the
+                                    Mattermost login page. You will then use the
+                                    same email address to login but with the new password and MFA 6-digit pin you just
+                                    created. If you want to change your Mattermost sign-on method now, <a
+                                        href="change.html">click here</a> for
+                                    instructions. Here’s a preview of what the
+                                    Mattermost login screen will look like after 31 May:</p>
+                                <div class="badges" style="height: auto; border-bottom:"><img class="img-fluid"
+                                        src="img/mm_signon_preview.png" width="auto"
+                                        style="height: auto;width: 700px;border-radius: 25px;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <section id="faq" class="faq text-left"
+                    style="background-color: #040e16;height: none;min-height: auto;max-height: auto;max-width: auto;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-8 mx-auto">
+                                <h2 class="section-heading" style="color: #52a1fd;">FAQ</h2>
+                                <h4>Why is this change necessary?</h4>
+                                <li>Platform One Single Sign-On (P1 SSO) gives us the ability to provide access to
+                                    different apps
+                                    such as Mattermost, Jitsi, GitLab, etc. using one login. This prevents having to
+                                    create a new account for each app or service we release. Additionally, using P1 SSO
+                                    will allow users to have multiple login methods such as username, password and MFA
+                                    at home and using a CAC to login at work. Some of these changes were also made to
+                                    help improve security.</li>
+                                <br>
+                                <h4>Why do I have to set up a new password and MFA again?</h4>
+                                <li>Unfortunately, we are not able to migrate passwords from Mattermost. However, you
+                                    can use the same password you were using in Mattermost as long as it contains two
+                                    special characters. Since the P1
+                                    SSO is a different login service, MFA must be setup again.</li>
+                                <br>
+                                <h4>Why am I not receiving a password
+                                    reset email from P1 SSO?</h4>
+                                <li>Try having the email sent again and
+                                    make sure to check your junk email folder.</li>
+                                <li>If you created your Mattermost
+                                    account after 19 May, your P1 SSO account may not have been automatically created.
+                                    Ask a
+                                    team or system admin for an invite link to create a P1 SSO account.</li>
+                                <br>
+                                <h4>What username, password and MFA pin
+                                    do I use to log into Mattermost?</h4>
+                                <li>Before 31 May, continue using your
+                                    existing username, password and MFA pin to access Mattermost (i.e. what you have
+                                    been
+                                    doing).</li>
+                                <li>After 31 May, you will log in using
+                                    the P1 SSO sign-on method which will use your email address and the newly
+                                    created password & MFA pin you set up in the steps above.</li>
+                                <br>
+                                <h4>How does a new user create a
+                                    Mattermost account with a username, password and MFA?</h4>
+                                <li>New Mattermost accounts using username, password and MFA are now created
+                                    through P1 SSO. To help increase our security posture, they will need an invite
+                                    link from another user or admin.</li>
+                                <li>Users still have the option to create new Mattermost accounts
+                                    using the AF Portal Login option, but they will be limited to only CAC access.
+                                    Ultimately, when
+                                    both phases of the P1 SSO transition is complete, all users will use a P1 SSO
+                                    account to access apps like Mattermost and will be able to log in using username,
+                                    password and MFA or a CAC.</li>
+                                <br>
+                                <h4>How do I send someone an invite link
+                                    to P1 SSO?</h4>
+                                <li>Administrators and users can find invitations links on their <a
+                                        href="https://sso.collab.cdl.af.mil/"
+                                        target="_blank">https://sso.collab.cdl.af.mil/</a> profile. Invitation links
+                                    are valid for 10 days. There is no restriction on sharing invitation links as long
+                                    as it is done through a government approved medium.</li>
+                                <br>
+                                <h4>I see a Platform One SSO
+                                    login button on the Mattermost login screen. What's it for?</h4>
+                                <li>The functionality already exists to
+                                    start using your P1 SSO to access Mattermost but it requires you to change your
+                                    Mattermost sign-on method. While it is possible to do this individually, accounts
+                                    will automatically be switched over on 31 May.</li>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </section>
+                <section id="survey" class="survey" style="padding: 0px;padding-top: 0px;margin-top: -5px;">
+                    <script src="https://static.airtable.com/js/embed/embed_snippet_v1.js"></script><iframe
+                        class="airtable-embed airtable-dynamic-height"
+                        src="https://airtable.com/embed/shrcThgZSF8jKx3tB?backgroundColor=blue" frameborder="0"
+                        onmousewheel="" width="100%" height="2746"
+                        style="background: transparent; border: 0px solid #ccc;"></iframe>
+                    <div class="container"
+                        style="width: auto;max-width: 100%;height: auto;max-height: 2746px;margin: auto 0;">
+                        <div class="section-heading text-center" style="width: auto;max-width: 100%;margin: 0 auto;">
+                        </div>
+                    </div>
+                </section>
+                <footer>
+                    <div class="container">
+                        <p>©&nbsp;Platform One 2020. All Rights Reserved.</p>
+                    </div>
+                </footer>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+                <script
+                    src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+                <script src="js/script.min.js"></script>
+</body>
+
+</html>
