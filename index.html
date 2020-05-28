@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Platform One SSO</title>
-    <link rel="icon" type="image/png" sizes="502x498" href="img/babyyodaCrop.png">
+    <link rel="icon" type="image/png" sizes="502x498" href="img/babyyodaCrop.jpg">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -47,7 +47,7 @@
                 <div class="col-lg-5 my-auto">
                     <div class="imac-mockup">
                         <img class="device" src="img/imac.svg">
-                        <div class="screen" style="background-image: url('img/desktopMockup.png');">
+                        <div class="screen" style="background-image: url('img/desktopMockup.jpg');">
                         </div>
                     </div>
                 </div>
@@ -69,10 +69,12 @@
                         methods on the same account, meaning you'll be able to use a username, password and MFA to log
                         in at home while using a CAC to log in at work. These changes will be rolling out in two phases:
                     </p>
-                    <p><b>Phase 1:</b> Migrate Mattermost username/password
+                    <p><b>Phase 1:</b> Migrate Mattermost username/password/MFA
                         users to P1 SSO. This has already begun and will be complete on 31 May.</li>
                     <p><b>Phase 2:</b> Migrate Mattermost AF Portal Login users
-                        to P1 SSO and enable the CAC login option. This will follow shortly after Phase 1.
+                        to P1 SSO and enable the CAC login option. This will follow shortly after Phase 1 (approximately end of June).
+                    <p>It's important to note that P1 SSO currently only supports the username/password/MFA login
+                        option. We're hoping to enable the CAC login option soon and will make an announcement when it's available..</p>
                 </div>
             </div>
         </div>
@@ -85,7 +87,7 @@
                         <h2 class="section-heading" style="color: #52a1fd;">What do I need to do?</h2>
                         <p><b>AF Portal Login Users:</b> If you currently log into Mattermost
                             using
-                            the AF Portal Login button, there's nothing you need to do right now.
+                            the AF Portal Login button, do not do anything right now.
                             Continue logging into Mattermost using the AF Portal Login button.</p>
 
                         <p><b>Username/Password/MFA Users:</b> If you log into Mattermost using
@@ -106,10 +108,12 @@
                     <div class="row">
                         <div class="col-md-8 mx-auto">
                             <h2 class="section-heading" style="color: #52a1fd;">How do I set it up?</h2>
-                            <p style="color: #ff3800;">Important: Access to your mobile device
+                            <p>Access to your mobile device
                                 MFA app (e.g. Google Authenticator, Authy, etc.) and the email
                                 address associated with your Mattermost account is required. It's also recommended to
                                 perform these steps from a web browser on a computer.</p>
+
+                            <p>During this process, you will be setting up your P1 SSO account which is separate from your current Mattermost account. In other words, you will have a username, password and MFA 6-digit pin for P1 SSO that is separate from your username, password and MFA 6-digit pin for Mattermost. <span style="color: #ff3800;">You will still need your Mattermost credentials even after you create your P1 SSO account, so be sure not to delete them!</span></p>
                         </div>
                     </div>
                     <br>
@@ -123,7 +127,7 @@
                                     email address associated with your
                                     Mattermost account and click “Submit”.<br></p>
                                 <div class="badges" style="height: auto; border-bottom:"><img class="img-fluid"
-                                        src="img/sso_main.png" width="auto"
+                                        src="img/sso_main.jpg" width="auto"
                                         style="height: auto;width: 400px; border-radius: 25px;"></div>
                         </div>
                     </div>
@@ -136,7 +140,7 @@
                                     or copy the URL into a web browser.<br>
                                 <div class="badges" style="height: auto; border-bottom:">
                                     <div class="badges" style="height: auto; border-bottom:"><img class="img-fluid"
-                                            src="img/verify_email.png" width="auto"
+                                            src="img/verify_email.jpg" width="auto"
                                             style="height: auto;width: auto; border-radius: 25px;"></div>
                                 </div>
                         </div>
@@ -155,7 +159,7 @@
                                     pin is not accepted or entered incorrectly, the QR code is
                                     reset so you will need to scan it again.</p>
                                 <div class="badges" style="height: auto; border-bottom:"><img class="img-fluid"
-                                        src="img/setup_mfa.png" width="auto"
+                                        src="img/setup_mfa.jpg" width="auto"
                                         style="height: auto;width: 400px; border-radius: 25px;"></div>
                         </div>
                     </div>
@@ -168,7 +172,7 @@
                                     contain at least two
                                     special characters.<br></p>
                                 <div class="badges" style="height: auto; border-bottom:"><img class="img-fluid"
-                                        src="img/setup_password.png" width="auto"
+                                        src="img/setup_password.jpg" width="auto"
                                         style="height: auto;width: 400px;border-radius: 25px;"></div>
                         </div>
                     </div>
@@ -180,7 +184,7 @@
                                     rest of your profile but <span style="color: #ff3800;">do not
                                         change your email address or username.</p>
                                 <div class="badges" style="height: auto; border-bottom:"><img class="img-fluid"
-                                        src="img/setup_profile.png" width="auto"
+                                        src="img/setup_profile.jpg" width="auto"
                                         style="height: auto;width: 700px;border-radius: 25px;"></div>
                         </div>
                     </div>
@@ -189,17 +193,18 @@
                         <div class="col-md-8 mx-auto">
                             <h3 class="section-heading" style="color: #52a1fd;">That's it for now!</h2>
                                 <p>Continue using Mattermost as you have
-                                    been but on 31 May, we will transition to P1 SSO which will
+                                    been, meaning the way you log into Mattermost has remain unchanged. <b>Continue using your existing Mattermost username, password and MFA 6-digit pin.</b> After 31 May, we will transition to P1 SSO which will
                                     require you to log into Mattermost by selecting “Platform One SSO” from the
-                                    Mattermost login page. You will then use the
-                                    same email address to login but with the new password and MFA 6-digit pin you just
-                                    created. If you want to change your Mattermost sign-on method now, <a
-                                        href="change.html">click here</a> for
-                                    instructions. Here’s a preview of what the
-                                    Mattermost login screen will look like after 31 May:</p>
-                                <div class="badges" style="height: auto; border-bottom:"><img class="img-fluid"
-                                        src="img/mm_signon_preview.png" width="auto"
-                                        style="height: auto;width: 700px;border-radius: 25px;"></div>
+                                    Mattermost login page. This is when you will start using the username (should be your same email address), password and MFA 6-digit pin you just
+                                    created following these steps.</p>
+                                <p>We understand it's a bit confusing having two separate sets of credentials, especially  having two MFA 6-digit pins. This is a major but necessary transition to be able to bring much requested features and apps in the near future.</p>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row border-bottom: 3px solid #ffffff;">
+                        <div class="col-md-8 mx-auto">
+                            <h3 class="section-heading" style="color: #52a1fd;">Don't want to wait?</h2>
+                                <p>If you don't want to wait until 31 May for the transition, you can manually switch your Mattermost sign-on method now to start using P1 SSO. Again, it's important to note you will still only be able to log in using a username, password and MFA for now. The ability to also log in with a CAC to P1 SSO is a feature we're hoping to have avaialble by the end of June. If you want to change your Mattermost sign-on method now, <a href="change.html">click here</a> for instructions.</p>
                         </div>
                     </div>
                 </div>
