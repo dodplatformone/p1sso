@@ -205,7 +205,8 @@
                             <p>You should now be logged into your Mattermost account. From here on out, you will use
                                 the blue "Platform One SSO" button on the Mattermost login screen to
                                 log into your account using the username, password and MFA you just setup.</p>
-                            <p style="font-style: italic;">Note: For the mobile app, select the purple "GitLab" button to log into P1 SSO. This is a known issue.</p>
+                            <p style="font-style: italic;">Note: For the mobile app, select the purple "GitLab" button
+                                to log into P1 SSO. This is a known issue.</p>
                         </div>
                     </div>
                     <br>
@@ -232,10 +233,27 @@
                                     special characters. Since the P1
                                     SSO is a different login service, MFA must be setup again.</li>
                                 <br>
+                                <h4>When setting up MFA, why do I keep getting "Invalid authenticator code"?</h4>
+                                <li>Make sure you are scanning the QR code with the MFA app on your mobile device. This
+                                    will produce a
+                                    MFA token (6-digit number) that changes every 30 seconds. Type in that 6-digit
+                                    number (e.g. 123456) with no spaces.</li>
+                                <li>If the MFA token is not accepted, you will receive the "Invalid authenticator code"
+                                    error. You must re-scan the QR code again which creates another MFA token (another
+                                    6-digit pin that is changing every 30 seconds). You must use the new 6-digit pin
+                                    (you can delete the old ones).</li>
+                                <li>Your phone time may be out of sync. Check your phone's settings to make sure the
+                                    time is updating automatically. If you're using Google Authenticator on Android, try
+                                    the Sync Now feature to update the time.</li>
+                                <br>
                                 <h4>Why am I not receiving a password
                                     reset email from P1 SSO?</h4>
                                 <li>Try having the email sent again and
                                     make sure to check your junk email folder.</li>
+                                <li>If you accidently tried logging in using your old Mattermost credentials more than
+                                    five times, your account is likely locked out. Contact a team admin or email us at
+                                    <a href="mailto: dod_p1chat_admin@afwerx.af.mil">dod_p1chat_admin@afwerx.af.mil</a>
+                                    to have your account unlocked.</li>
                                 <li>If you created your Mattermost
                                     account after 19 May, your P1 SSO account may not have been automatically created.
                                     Ask a
