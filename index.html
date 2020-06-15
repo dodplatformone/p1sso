@@ -72,9 +72,9 @@
                     <p><b>Phase 1 is complete!</b> If you were previously logging into Mattermost using
                         username/password/MFA, you will now log in using P1 SSO.</li>
                     <p><b>Phase 2 has begun!</b> Users can now log in using both username/password/multi-factor
-                        authentication (MFA) and CAC on the same P1 SSO account. Users who log into
+                        authentication (MFA) and CAC on the same P1 SSO account. <span style="color: #ff3800;">Users who log into
                         Mattermost using the AF Portal Login (CAC) option will continue using the AF Portal Login option
-                        for now. We will be migrating your accounts automatically to P1 SSO soon.
+                        for now.</span> We will be migrating these accounts automatically to P1 SSO soon.
                 </div>
             </div>
         </div>
@@ -88,25 +88,35 @@
                         <h3 class="section-heading" style="color: #52a1fd;">AF Portal Login Users</h3>
                         <p>If you currently log into Mattermost using the AF Portal Login button, nothing has changed.
                             Continue logging into Mattermost using the AF Portal Login button. Your account will be
-                            migrated to P1 SSO soon.</p>
+                            migrated to P1 SSO soon. If you don't want to wait and would like to migrate your account
+                            now, email us at <a
+                                href="mailto: dod_p1chat_admin@afwerx.af.mil">dod_p1chat_admin@afwerx.af.mil</a> and we
+                            may be able to migrate your account. <span style="color: #ff3800;">Do not create a new P1
+                                SSO account until instructed to do so as this may create a duplicate account.</span></p>
 
                         <h3 class="section-heading" style="color: #52a1fd;">P1 SSO Users</h3>
-                        <p>If you were logging into Mattermost using P1 SSO (username/password/MFA), you now have the
+                        <p>If you log into Mattermost using P1 SSO (username/password/MFA), you now have the
                             option to enable the CAC sign on option. This allows you to log in using a
                             username/password/MFA or a CAC. To enable the CAC login option, simply sign into your
                             account using a username/password/MFA while your CAC is inserted into the computer. You will
-                            be prompted to confirm your CAC which will associate it with your P1 SSO account.</p>
+                            recieve a prompt to confirm your CAC which will associate it with your P1 SSO account. You
+                            can now sign in using either your username/password/MFA or CAC.</p>
+                        <div class="badges" style="height: auto; border-bottom:"><img class="img-fluid"
+                                src="img/cac_confirm.jpg" width="auto"
+                                style="height: auto;width: 550px; border-radius: 25px;"></div>
+                        <br>
+                        <h3 class="section-heading" style="color: #52a1fd;">Mattermost Users Prior to P1 SSO</h3>
+                        <p>If you had a Mattermost account but have not logged in recently (over a month), your
+                            account
+                            was migrated to P1 SSO and you will need to finish setting it up. <a
+                                href="setup_p1sso.html">Click
+                                here</a> for instructions on how to finish migrating your account.</p>
 
                         <h3 class="section-heading" style="color: #52a1fd;">New Users</h3>
                         <p>If you need to set up a new account (i.e. you never had a Mattermost account), new
                             Mattermost accounts are now created through P1 SSO. <a href="new_account.html">Click
                                 here</a> for setup instructions.</p>
 
-                        <h3 class="section-heading" style="color: #52a1fd;">Mattermost Users Prior to P1 SSO</h3>
-                        <p>If you had a Mattermost account but have not logged in recently (over a month), your account
-                            was migrated to P1 SSO and you will need to finish setting it up. <a
-                                href="setup_p1sso.html">Click
-                                here</a> for setup instructions.</p>
                     </div>
                 </div>
             </div>
@@ -185,7 +195,8 @@
                                 as it is done through a government approved medium.</li>
                             <br>
                             <h4>I have multiple Mattermost and/or P1 SSO accounts, can I combine them?</h4>
-                            <li>Unfortunately, there is no way for us to combine accounts. We can deactivate whichever
+                            <li>Unfortunately, there is no way for us to combine accounts. We can deactivate
+                                whichever
                                 account you will no longer be using. Let your team admin know which account (email
                                 address) you will no longer be using or email us directly at <a
                                     href="mailto: dod_p1chat_admin@afwerx.af.mil">dod_p1chat_admin@afwerx.af.mil</a>.
